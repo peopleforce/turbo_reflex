@@ -40,7 +40,7 @@ class TurboReflex::ControllerPack
     runner.reflex_errored?
   end
 
-  def render(...)
-    reflex.render_response(...)
+  def render(*args, **kws, &block)
+    reflex.render_response(*args, **kws, &block)
   end
 end
