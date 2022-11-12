@@ -82,8 +82,8 @@ class TurboReflex::Base
     @turbo_streams = Set.new
   end
 
-  def dom_id_selector(...)
-    "##{dom_id(...)}"
+  def dom_id_selector(*args, **kws, &block)
+    "##{dom_id(*args, **kws, &block)}"
   end
 
   def morph(selector, html)
